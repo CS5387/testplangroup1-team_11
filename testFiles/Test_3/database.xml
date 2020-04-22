@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE DATABASE SYSTEM "./DB/WscDatabase.dtd">
+<DATABASE name='database' file_name='TESTSC1_TDRS_DB.DUMP'>
+  <PROPERTY name='NumberOfUsers' value='100' />
+  <PROPERTY name='BufferMemory' value='false' />
+  <PROPERTY name='Snapshot' value='false' />
+  <PROPERTY name='AllocationPages' value='0' />
+  <PROPERTY name='ExtentMinimum' value='99' />
+  <PROPERTY name='ExtentMaximum' value='9999' />
+  <PROPERTY name='SnapshotAllocationPages' value='100' />
+
+  <TABLE name='table' x='560' y='560'>
+    <COLUMN name='FIELD_CHARACTER' type='CHAR' size='12' />
+    <COLUMN name='FIELD_SMALLINT' type='SMALLINT' >
+      <CONSTRAINT name='NN_0' type='NotNull'/>
+    </COLUMN>
+    <COLUMN name='FIELD1_TINYINT' type='TINYINT' >
+      <CONSTRAINT name='NN_0' type='NotNull'/>
+    </COLUMN>
+    <COLUMN name='FIELD_DP' type='DOUBLE_PRECISION' >
+      <CONSTRAINT name='NN_0' type='NotNull'/>
+    </COLUMN>
+    <COLUMN name='FIELD1_INTEGER' type='INTEGER'/>
+  </TABLE>
+  <HISTORY>
+    <ITEM date='12/13/2011' author='Steve Roach' comment='Initial creation from relational model' />
+  </HISTORY>
+</DATABASE>
